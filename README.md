@@ -7,8 +7,10 @@ During registration, the youths are required to provide the following details: f
 
 Individual membership fee is KSh 1,000 and groups are required to pay a membership fee of KSh 500 per person.
 The enrolled members are categorised into three groups namely: the minors consisting of members who are of ages 12 to 17 years, the middle group who are of ages 18 to 25 years and the seniors who are of ages 26 to 35 years.
+
 The sports club offers various sporting items at a fee and the items are available at the club’s store. A member can purchase any of the items by cash or mobile money transfer.
 If a member purchases items of a value exceeding KSh 10,000, a discount of 5% is offered.
 The store clerk is required to maintain records of the items sold and the stock in the store. If the stock level of any item drops to 20% of its maximum stock level, the clerk is expected to alert the club management to re-order the item.
+
 Each game has a patron whose duties include facilitating events within the club and with other external teams. If a team is required to play against an external team, each member in the team is required to pay a facilitation fee of Kshs. 500. The patron is paid 20% of the total facilitation fee as commission.
 The patron is also responsible for selecting a game captain from the members. The captain is responsible for collecting and returning various sports equipment from the store to facilitate the game. In case of any loss or damage to the equipment, the captain and the team members are surcharged at the market value of the equipment plus 10% of the value.

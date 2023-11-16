@@ -85,6 +85,8 @@ public class ClubMembership {
 
         membersPanel.add(scrollPane);
 
+        table.addRowSelectionInterval(0,table.getRowCount()-1);
+
         frame.add(mainPanel, BorderLayout.CENTER);
 
         JPanel gamesPlayedPanel = new JPanel(new BorderLayout());
@@ -127,6 +129,8 @@ public class ClubMembership {
         table1.setEnabled(false);
         table1.setFont(new Font("Arial", Font.BOLD, 12));
         table1.setFillsViewportHeight(true);
+
+        table1.addRowSelectionInterval(0,table1.getRowCount()-1);
 
         JScrollPane scrollPane1 = new JScrollPane();
         scrollPane1.setViewportView(table1);
@@ -180,6 +184,8 @@ public class ClubMembership {
         table2.setEnabled(false);
         table2.setFont(new Font("Arial", Font.BOLD, 12));
         table2.setFillsViewportHeight(true);
+
+        table2.addRowSelectionInterval(0,table2.getRowCount()-1);
 
         JScrollPane scrollPane2 = new JScrollPane();
         scrollPane2.setViewportView(table2);

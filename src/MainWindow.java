@@ -10,14 +10,22 @@ public class MainWindow{
         JFrame frame = new JFrame();
         frame.setTitle("Maringo Sports Club");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new BorderLayout());
+        frame.setLayout(null);
 
         JLabel titleLabel = new JLabel("MARINGO SPORTS CLUB SYSTEM");
+        titleLabel.setBorder(new LoginForm.RoundBorder(4) );
+        titleLabel.setForeground(Color.BLUE);
+        titleLabel.setBounds(10,20,700,30);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        frame.add(titleLabel, BorderLayout.NORTH);
+        frame.add(titleLabel);
+
+        JLabel image = new JLabel(new ImageIcon("src/istockphoto-1364827675-612x612.jpg"));
+        image.setBounds(340,80,400,400);
+        frame.add(image);
 
         JPanel buttonPanel = new JPanel(new GridBagLayout());
+        buttonPanel.setBounds(20,50,300,400);
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10,10,10,10);
         gbc.anchor = GridBagConstraints.CENTER;
@@ -145,7 +153,7 @@ public class MainWindow{
             @Override
             public void actionPerformed(ActionEvent e) {
                 //openFacilitationInterface();
-                new GameFacilitation(frame);
+                //new GameFacilitation(frame);
             }
         });
         reportsButton.addActionListener(new ActionListener() {

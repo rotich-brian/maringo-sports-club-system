@@ -1,11 +1,10 @@
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.sql.*;
 
 public class ClubMembership {
@@ -80,6 +79,14 @@ public class ClubMembership {
         table.setFont(new Font("Arial", Font.BOLD, 12));
         table.setFillsViewportHeight(true);
 
+        table.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                int i = table.getSelectedRow();
+            }
+        });
+
         JScrollPane scrollPane = new JScrollPane();
         scrollPane.setViewportView(table);
 
@@ -130,7 +137,23 @@ public class ClubMembership {
         table1.setFont(new Font("Arial", Font.BOLD, 12));
         table1.setFillsViewportHeight(true);
 
-        table1.addRowSelectionInterval(0,table1.getRowCount()-1);
+        ListSelectionModel selectionModel = table1.getSelectionModel();
+//        selectionModel.addListSelectionListener(new ListSelectionListener() {
+//            @Override
+//            public void valueChanged(ListSelectionEvent e) {
+//                if (!e.getValueIsAdjusting()) {
+//                    int selectedRow = table.getSelectedRow();
+//                    if (selectedRow != -1) {
+//                        // Show the selected row data
+//                        System.out.println("Selected Row: " + selectedRow);
+//                        for (int i = 0; i < tableModel1.getColumnCount(); i++) {
+//                            System.out.print(tableModel1.getColumnName(i) + ": " + tableModel1.getValueAt(selectedRow, i) + "  ");
+//                        }
+//                        System.out.println();
+//                    }
+//                }
+//            }
+//        });
 
         JScrollPane scrollPane1 = new JScrollPane();
         scrollPane1.setViewportView(table1);
